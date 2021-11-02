@@ -1,0 +1,15 @@
+## combining lists back into int to compare
+def combine(intlist):
+    strings = [str(integer) for integer in intlist]
+    a_string = "".join(strings)
+    an_integer = int(a_string)
+    print(an_integer)
+    
+## Split integer into parts
+num = 12345
+x = [int(a) for a in str(num)]
+print(x)
+
+## reversing list order
+x.reverse()
+print(x)

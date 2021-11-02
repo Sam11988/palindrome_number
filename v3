@@ -1,0 +1,18 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        try: ## Error handling for negative ints (auto-fail)
+        
+            ## Splitting X into parts in a list
+            x_list = [int(a) for a in str(x)]
+        
+            ## Reversing List Order
+            palindrome = list(reversed(x_list))
+        
+            ## Compares the values of the list and reversed list
+            if x_list == palindrome:
+                return True
+            else:
+                return False
+            
+        except:
+            return False

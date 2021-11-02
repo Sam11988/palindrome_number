@@ -1,0 +1,22 @@
+
+## Simple function to convert a list into an int
+## Not actually necessary :(
+def to_list(intlist):
+    strings = [str(integer) for integer in intlist]
+    a_string = int("".join(strings)) ##slightly more pythonic than 4 lines
+
+## Method works for > 0 integers, throws an error with any negative integers
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        
+        ## Splitting X into parts in a list
+        x_list = [int(a) for a in str(x)]
+        
+        ## Reversing List Order
+        palindrome = list(reversed(x_list))
+        
+        ## Compares the values of the list and reversed list
+        if x_list == palindrome:
+            return True
+        else:
+            return False
